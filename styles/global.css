@@ -25,6 +25,14 @@ blockquote {
   padding: 0;
 }
 
+address {
+  font-style: normal;
+}
+
+button {
+  background: transparent;
+}
+
 a {
   color: inherit;
 }
