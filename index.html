@@ -7,11 +7,12 @@
 		<title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
 		<link rel="stylesheet" href="./fonts/fonts.css" />
 		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/global.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container">
-				<nav class="nav header__nav">
+				<nav class="box">
 					<ul class="header__menu">
 						<li class="header__menu-list header_menu-list_active">
 							<a class="header__menu-link">главная</a>
@@ -33,9 +34,9 @@
 						<a href="mailto:info@sobaka.ge" class="header__contacts-mail"
 							>info@sobaka.ge</a
 						>
-						<a class="header__contacts-address"
-							>наб. Принсенграхт 263-265, Амстердам</a
-						>
+						<a class="header__contacts-address">
+							<p>наб. Принсенграхт 263-265, Амстердам</p>
+						</a>
 					</address>
 				</nav>
 			</div>
@@ -48,15 +49,16 @@
 						<span class="title_line title_line-center">
 							те<span class="title_span">бе</span>
 						</span>
-						<span class="title_line title_line-right">н<span class="title_span-right">ад</span
-							><span class="title_span title_span-o">о</span>
+						<span class="title_line title_line-right"
+							>н<span class="title_span-right">ад</span
+							><span class="title_span title_span-last">о</span>
 						</span>
 					</h1>
 					<div class="cover__bottom">
-						<span class="cover__text"
-							>Аукцион вещей, в которые никто не верил</span
-						>
-						<button class="cover__bet-button">Сделать ставку</button>
+						<p class="cover__text">Аукцион вещей, в которые никто не верил</p>
+						<button type="button" class="cover__bet-button">
+							Сделать ставку
+						</button>
 					</div>
 				</div>
 				<div class="overlay cover__overlay"></div>
@@ -64,7 +66,7 @@
 			<section class="lots">
 				<div class="container">
 					<h2 class="heading heading__lots">Лоты</h2>
-					<nav class="lots__card-list">
+					<div class="lots__card-list">
 						<ul class="lots__card-list-item">
 							<li class="lot-card card_type_film">
 								<a href="#0" class="lot-card-link">
@@ -77,7 +79,7 @@
 										Андерсон?
 									</p>
 								</a>
-								<div class="overlay lots__overlay"></div>
+								<div class="overlay"></div>
 							</li>
 							<li class="lot-card card_type_book">
 								<a href="#0" class="lot-card-link">
@@ -94,7 +96,7 @@
 										Джеймса Джойса?
 									</p>
 								</a>
-								<div class="overlay lots__overlay"></div>
+								<div class="overlay"></div>
 							</li>
 							<li class="lot-card card_type_picture">
 								<a href="#0" class="lot-card-link">
@@ -111,7 +113,7 @@
 								<div class="overlay lots__overlay"></div>
 							</li>
 						</ul>
-					</nav>
+					</div>
 					<a href="#0" class="more-lots">посмотреть больше</a>
 				</div>
 			</section>
@@ -150,7 +152,7 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-				<nav class="nav footer__nav">
+				<div class="box footer__box">
 					<address class="address footer__contacts">
 						<a href="tel:+99995555555" class="footer__contacts-number"
 							>+9 999 555 5555</a
@@ -158,21 +160,23 @@
 						<a href="mailto:info@sobaka.ge" class="footer__contacts-mail"
 							>info@sobaka.ge</a
 						>
-						<a class="footer__contacts-address"
-							>наб. Принсенграхт 263-265, Амстердам</a
-						>
+						<a class="footer__contacts-address">
+							<p>наб. Принсенграхт 263-265, Амстердам</p>
+						</a>
 					</address>
-					<ul class="footer__menu">
-						<li class="footer__menu-list">
-							<a href="#" class="footer__menu-link">главная</a>
-						</li>
-						<li class="footer__menu-list">
-							<a href="#0" class="footer__menu-link">посмотреть лоты</a>
-						</li>
-						<li class="footer__menu-list">
-							<a href="#0" class="footer__menu-link">об аукционе</a>
-						</li>
-					</ul>
+					<nav class="footer__menu">
+						<ul class="footer__menu">
+							<li class="footer__menu-list">
+								<a href="#" class="footer__menu-link">главная</a>
+							</li>
+							<li class="footer__menu-list">
+								<a href="#0" class="footer__menu-link">посмотреть лоты</a>
+							</li>
+							<li class="footer__menu-list">
+								<a href="#0" class="footer__menu-link">об аукционе</a>
+							</li>
+						</ul>
+					</nav>
 					<ul class="footer__social-list">
 						<li class="footer__social-list-item">
 							<a href="#0" class="footer__social-link">
@@ -202,7 +206,7 @@
 							</a>
 						</li>
 					</ul>
-				</nav>
+				</div>
 			</div>
 		</footer>
 	</body>
