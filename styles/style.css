@@ -5,6 +5,11 @@ body {
 	color: #000;
 }
 
+a {
+	text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .container {
 	max-width: 1360px;
 	padding: 0 10px;
